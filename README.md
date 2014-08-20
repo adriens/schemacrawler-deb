@@ -27,6 +27,6 @@ Build all and (re)install
 Uninstall
 ------------------------------------------
 
-`sudo apt-get remove schemacrawler
+`sudo apt-get remove schemacrawler`
 
 
