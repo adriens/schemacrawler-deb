@@ -1,4 +1,4 @@
-Schemacrawler Debian package buidler
+Schemacrawler Debian package builder
 ==========================================
 
 Set version in session
