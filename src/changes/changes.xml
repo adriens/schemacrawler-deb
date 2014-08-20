@@ -1,0 +1,40 @@
+
+<document xmlns="http://maven.apache.org/changes/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+    <properties>
+        <title>Schemacrawler Debian Installer Changes</title>
+        <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
+    </properties>
+    <body>
+        <!-- Allowed action.type : add, update -->
+        <release version="10.10.04" date="2014-08-19"
+               description="First version of the debian installer">
+            <action dev="adriens" type="add">MySQL support added, with bundled driver.</action>
+            <action dev="adriens" type="add">HyperSQL support added, with bundled driver.</action>
+            <action dev="adriens" type="add">Derby support added, with bundled driver.</action>
+            <action dev="adriens" type="add">SQL Server support added, with bundled driver.</action>
+            <action dev="adriens" type="add">Offline Snapshots support added, with bundled driver.</action>
+            <action dev="adriens" type="add">SQLitesupport added, with bundled driver.</action>
+            <action dev="adriens" type="add">PostgreSQL support added, with bundled driver.</action>
+            <action dev="adriens" type="add">IBM DB2 UDB support added, no driver.</action>
+            <action dev="adriens" type="add">Sybase IQ support added, no driver.</action>
+            <action dev="adriens" type="add">Oracle support added, no driver.</action>
+            <action dev="adriens" type="add">DB2/400 (jt400) driver added.</action>
+            <action dev="adriens" type="add">Shell scripts modified for all databases added.</action>
+            <action dev="adriens" type="add">Modified Shell scripts so schemacrawler supports to be called without any argument.</action>
+            <action dev="adriens" type="add">Created maven site.</action>
+            <action dev="adriens" type="add">Completed developers list with myself.</action>
+            <action dev="adriens" type="add">Created a README.md.</action>
+            
+            <action dev="adriens" type="add">DB2/UDB Driver : dedicated HOW-TO added.</action>
+            <action dev="adriens" type="add">Sybase IQ Driver : dedicated HOW-TO added.</action>
+            <action dev="adriens" type="add">Oracle Driver : dedicated HOW-TO added.</action>
+            <action dev="adriens" type="add">Created the changes.xml file to better
+                document changes thanks to the Apache Maven Changes Plugin.</action>
+            
+            <!--<action dev="adriens" type="add"></action>-->
+        </release>
+	    
+    </body>
+</document>

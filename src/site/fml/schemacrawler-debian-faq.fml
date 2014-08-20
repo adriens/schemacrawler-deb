@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+      title="Frequently Asked Questions"
+      toplink="false">
+
+    <part id="build">
+        <title>How to build</title>
+
+        <faq id="build-1">
+            <question>
+                What is needed to build Schemacrawler debian package ?
+            </question>
+            <answer>
+                <p>To build it you only need schemacrawler-deb sources and a proper maven
+                    install. Then, to build (on any OS supported by java) the debian package : </p>
+
+<source>mvn clean site install</source>
+
+                <p>You will get your ready to use debian package in target directory,
+                    to test its contents and what and how the deb will be deployed, run :
+<source>
+export SCHEMACRAWLER_VERSION=$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version | egrep -v '^\[|Downloading:' | tr -d ' \n')
+mvn clean site  install &amp;&amp; sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
+</source>
+                </p>
+            </answer>
+        </faq>
+
+    
+    </part>
+
+    <part id="install">
+
+        <title>Installation</title>
+
+        <faq id="how-install">
+            <question>
+                How to install liquibase the debian way ?
+            </question>
+            <answer>
+                <p>Just : 
+                    <source>sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb</source>
+                </p>
+                <p>Then to test, just type schemacrawler (and make it autocomplete to find customized schemacrawlers install
+                    for most of the databases).For open source databases, drivers are friendly provided as part of the distribution.</p>
+            </answer>
+        </faq>
+        <faq id="how-remove">
+            <question>
+                How to remove schemacrawler ?
+            </question>
+            <answer>
+                <p>Just : 
+<source>sudo apt-get remove schemacrawler</source>
+                </p>
+            </answer>
+        </faq>
+        <faq id="how-upgrade-downgrade">
+            <question>
+                How to upgrade or downgrade schemacrawler ?
+            </question>
+            <answer>
+                <p>Just : 
+<source>sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb</source>
+                </p>
+            </answer>
+        </faq>
+    </part>
+</faqs>

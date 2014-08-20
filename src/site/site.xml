@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Schemacrawler">
+    <poweredBy>  
+    <logo name="Maven" href="http://maven.apache.org/" img="http://maven.apache.org/images/logos/maven-button-1.png" />
+    <logo name="Support SchemaCrawler" href="http://sourceforge.net/p/schemacrawler/donate/" img="http://images.sourceforge.net/images/project-support.jpg" />
+  </poweredBy>
+    
+    <bannerLeft>
+        <name>Schemacrawler Debian installer</name>
+        <src>https://c.fsdn.com/allura/p/schemacrawler/icon</src>
+        <href>http://schemacrawler.sourceforge.net/</href>
+    </bannerLeft>
+    <bannerRight>
+    <name>SourceForge</name>
+    <src>
+      <![CDATA[http://sourceforge.net/sflogo.php?group_id=148383&type=5]]>
+    </src>
+  </bannerRight>
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.3.1</version>
+    </skin>
+    <body>
+        <links>
+            <!-- Schemacrawler links -->
+            <item name="Schemacrawler homepage" href="http://schemacrawler.sourceforge.net/" />
+            <item name="Schemacrawler Git Repohub" href="https://sourceforge.net/p/schemacrawler/code_git/ci/master/tree/"/>
+            <item name="Schemacrawler on SlideShare" href="http://www.slideshare.net/sualeh/schemacrawler"/>
+            <item name="Download Schemacrawler" href="http://sourceforge.net/projects/schemacrawler/files/"/>
+            <!-- Debian links -->
+            <item name="Debian" href="https://www.debian.org/"/>
+            <item name="Linux Mint" href="http://linuxmint.com/"/>
+            <item name="Ubuntu" href="http://www.ubuntu.com/"/>
+            <item name="Tails" href="https://tails.boum.org/"/>
+        </links>
+
+        <menu name="Schemacrawler Debian Package">
+            <item name="Introduction" href="schemacrawler-debian-faq.html"/>
+        </menu>
+        <menu ref="reports"/>
+    <footer>All rights reserved.</footer>
+    </body>
+</project>
