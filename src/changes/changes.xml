@@ -35,6 +35,11 @@
             
             <!--<action dev="adriens" type="add"></action>-->
         </release>
+	
+	<release version="10.10.05" date="2014-09-01"
+               description="10.10.05 version of the debian installer">
+            <action dev="adriens" type="add">Changed schemacrawler version : target now is 10.10.05</action>
+        </release>
 	    
     </body>
 </document>
