@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.sourceforge.schemacrawler</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>10.10.05</version>
+    <version>11.01.01</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
@@ -57,7 +57,7 @@
     <dependencies>
         <!-- Schemacrawler dependencies -->
         <dependency>
-            <groupId>net.sourceforge.schemacrawler</groupId>
+            <groupId>us.fatehi</groupId>
             <artifactId>schemacrawler</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -150,21 +150,21 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-lint</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-generic</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>
@@ -183,7 +183,7 @@
                                 </artifactItem>
                                 <!-- Get schemacrawler-postgresql  -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-postgresql</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -203,7 +203,7 @@
                                 </artifactItem>
                                 <!-- Get schemacrawler-mysql  -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-mysql</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -223,7 +223,7 @@
                                 </artifactItem>
                                 <!-- Get schemacrawler-sqlserver  -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-sqlserver</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -243,7 +243,7 @@
                                 </artifactItem>
                                 <!-- Get schemacrawler-derby  -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-derby</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -263,7 +263,7 @@
                                 </artifactItem>
                                 <!-- Get schemacrawler-derby  -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-hsqldb</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -283,7 +283,7 @@
                                 </artifactItem>
                                 <!-- Get schemacrawler-sqlite  -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-sqlite</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -293,7 +293,7 @@
                                 
                                 <!-- Offline -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-offline</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -327,7 +327,7 @@
                                 
                                 <!-- DB2 -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-db2</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -338,7 +338,7 @@
                                 
                                 <!-- Sybase IQ -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-sybaseiq</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
@@ -348,7 +348,7 @@
                                 
                                 <!-- Oracle -->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.schemacrawler</groupId>
+                                    <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-oracle</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
