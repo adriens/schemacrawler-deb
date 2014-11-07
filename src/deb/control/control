@@ -3,7 +3,7 @@ Version: [[version]]
 Section: misc
 Priority: optional
 Architecture: all
-Depends: graphviz
+Recommends: graphviz
 Maintainer: Adrien.Sales <Adrien.Sales@gmail.com>
 Description: Schemacrawler (http://schemacrawler.sourceforge.net/)
  Schemacrawler (http://schemacrawler.sourceforge.net/) is a free database schema
