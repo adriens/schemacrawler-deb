@@ -49,6 +49,8 @@
         <xpp3_min.version>1.1.4c</xpp3_min.version>
         <xstream.version>1.4.4</xstream.version>
         <jt400.version>6.7</jt400.version>
+        <h2.version>1.4.182</h2.version>
+        
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version.version>2.7</maven-project-info-reports-plugin.version.version>
         <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
@@ -107,6 +109,12 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>${sqlite.version}</version>
         </dependency>
+        <dependency>
+	<groupId>com.h2database</groupId>
+	<artifactId>h2</artifactId>
+	<version>${h2.version}</version>
+</dependency>
+
 
         <!-- Offline feature dependencies -->
         <dependency>
@@ -285,6 +293,26 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-sqlite</artifactId>
+                                    <version>${project.version}</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
+                                </artifactItem>
+                                
+                                <!-- H2 section -->
+                                <!-- Get the driver-->
+                                <artifactItem>
+                                    <groupId>com.h2database</groupId>
+                                    <artifactId>h2</artifactId>
+                                    <version>${h2.version}</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
+                                </artifactItem>
+                                <!-- Get schemacrawler-sqlite  -->
+                                <artifactItem>
+                                    <groupId>us.fatehi</groupId>
+                                    <artifactId>schemacrawler-h2</artifactId>
                                     <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
@@ -559,6 +587,28 @@
                                     </mapper>
                                 </data>
                                 
+                                <!-- h2 resources -->
+                                <data>
+                                    <src>${project.build.directory}/lib/h2-${h2.version}.jar</src>
+                                    <dst>h2-${h2.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>${project.build.directory}/lib/schemacrawler-h2-${project.version}.jar</src>
+                                    <dst>schemacrawler-h2-${project.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
+                                    </mapper>
+                                </data>
+                                
                                 <!-- Offline Resources -->
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-offline-${project.version}.jar</src>
@@ -774,7 +824,16 @@
                                     </mapper>
                                 </data>
                                 <data>
-                                    <src>src/main/resources/schemacrawler-offline.sh</src>
+                                    <src>src/main/resources/schemacrawler-sqlite.sh</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/schemacrawler-h2.sh</src>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>
