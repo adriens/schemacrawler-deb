@@ -869,6 +869,72 @@
                                     </mapper>
                                 </data>
                                 
+                                <!-- open source drivers licence manifests -->
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-derby.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-h2.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-hsqldb.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-mysql.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-postgresql.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-sqlite.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-sqlserver.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                
+                                
                                 <!-- Symbolic links -->
                                 <data>
                                     <type>link</type>
