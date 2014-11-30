@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ $# -eq 0 ]; then
-java -classpath /opt/schemacrawler/lib/*:. schemacrawler.tools.generic.Main -help
+java -cp $(echo /opt/schemacrawler/lib/*.jar | tr ' ' ':') schemacrawler.Main $*
 else
-java -classpath /opt/schemacrawler/lib/*:. schemacrawler.tools.generic.Main $*
+java -cp $(echo /opt/schemacrawler/lib/*.jar | tr ' ' ':') schemacrawler.Main $*
 fi
