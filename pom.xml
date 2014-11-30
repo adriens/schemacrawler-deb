@@ -71,13 +71,7 @@
             <version>${project.version}</version>
         </dependency>
         -->
-        <!--
-        <dependency>
-            <groupId>net.sourceforge.schemacrawler</groupId>
-            <artifactId>schemacrawler-generic</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        -->
+
         <!-- Database Drivers-->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -167,13 +161,6 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-lint</artifactId>
-                                    <version>${project.version}</version>
-                                    <overWrite>true</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-generic</artifactId>
                                     <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
@@ -418,16 +405,6 @@
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-${project.version}.jar</src>
                                     <dst>schemacrawler-${project.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-generic-${project.version}.jar</src>
-                                    <dst>schemacrawler-generic-${project.version}.jar</dst>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>
@@ -933,6 +910,15 @@
                                         <prefix>/opt/schemacrawler-${project.version}/</prefix>
                                     </mapper>
                                 </data>
+                                <data>
+                                    <src>src/main/resources/DRIVER.LICENSE-jt400.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
                                 
                                 
                                 <!-- Symbolic links -->
@@ -986,14 +972,20 @@
                                 </data>
                                 <data>
                                     <type>link</type>
+                                    <linkName>/usr/bin/schemacrawler-sqlite</linkName>
+                                    <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler-sqlite.sh</linkTarget>  
+                                    <symlink>true</symlink>
+                                </data>
+                                <data>
+                                    <type>link</type>
                                     <linkName>/usr/bin/schemacrawler-offline</linkName>
                                     <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler-offline.sh</linkTarget>  
                                     <symlink>true</symlink>
                                 </data>
                                 <data>
                                     <type>link</type>
-                                    <linkName>/usr/bin/schemacrawler-db2</linkName>
-                                    <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler-db2.sh</linkTarget>  
+                                    <linkName>/usr/bin/schemacrawler-h2</linkName>
+                                    <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler-h2.sh</linkTarget>  
                                     <symlink>true</symlink>
                                 </data>
                                 <data>
