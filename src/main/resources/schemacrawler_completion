@@ -10,5 +10,6 @@ _schemacrawler()
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
     fi
+    
 }
 complete -F _schemacrawler schemacrawler
