@@ -9,7 +9,6 @@
     <body>
         <release version="12.01.01" date="2014-12-01"
                description="Upgraded installer to match new software distribution">
-            <action dev="adriens" type="add">Added symbolic link sc in addition to schemacrawler</action>
             <action dev="adriens" type="add">Refactored command line to match schemacrawler behavior</action>
             <action dev="adriens" type="add">Removed dedicated databases command lines.</action>
             <action dev="adriens" type="add">Removed references to schemacrawler-generic</action>
