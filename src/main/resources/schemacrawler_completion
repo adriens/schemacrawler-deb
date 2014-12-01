@@ -1,0 +1,14 @@
+_schemacrawler()
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="-? -h -help --help -driver= -V --version -url= -u= -password= -server= -infolevel= -schemas= -tabletypes= -tables= -excludecolumns= -routinetypes= -routines= -excludeinout= -synonyms= -sequences= -grepcolumns= -grepinout= -grepdef= -invert-match -only-matching -parents= -children= -g= -p= -loglevel= -c="
+
+    if [[ ${cur} == -* ]] ; then
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+    fi
+}
+complete -F _schemacrawler schemacrawler
