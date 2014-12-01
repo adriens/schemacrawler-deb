@@ -1,0 +1,11 @@
+Acknowledgements
+
+    I want to thank :
+
+    * Sualeh Fatehi for his kind feedbacks and in his interest in the debian installer
+
+    * jdeb for providing its very nice jdeb package that made it possible to build a very nice .deb package, straight from maven, and on any platform
+
+    * My girlfriend Tatiana for her support in open source developement on the couch while watching TV-Shows the WE
+
+    * My office manager Richard that lets me develop on office time

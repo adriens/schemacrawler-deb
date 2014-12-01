@@ -32,11 +32,13 @@
             <item name="Debian" href="https://www.debian.org/"/>
             <item name="Linux Mint" href="http://linuxmint.com/"/>
             <item name="Ubuntu" href="http://www.ubuntu.com/"/>
-            <item name="Tails" href="https://tails.boum.org/"/>
+            <!-- Other useful links -->
+            <item name="Jdeb" href="https://github.com/tcurdt/jdeb"/>
         </links>
 
         <menu name="Schemacrawler Debian Package">
             <item name="Introduction" href="schemacrawler-debian-faq.html"/>
+            <item name="Acknowledgements" href="acknowledgements.html"/>
         </menu>
         <menu ref="reports"/>
     <footer>All rights reserved.</footer>

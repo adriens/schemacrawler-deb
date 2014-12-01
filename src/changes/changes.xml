@@ -7,6 +7,17 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        <release version="12.01.01" date="2014-12-01"
+               description="Upgraded installer to match new software distribution">
+            <action dev="adriens" type="add">Added symbolic link sc in addition to schemacrawler</action>
+            <action dev="adriens" type="add">Refactored command line to match schemacrawler behavior</action>
+            <action dev="adriens" type="add">Removed dedicated databases command lines.</action>
+            <action dev="adriens" type="add">Removed references to schemacrawler-generic</action>
+            <action dev="adriens" type="add">Added the jt400 (open source DB/400) driver manifest. Copied from http://opensource.org/licenses/ibmpl.php as mentionned on http://jt400.sourceforge.net/.</action>
+            <action dev="adriens" type="add">Added open source drivers licence manifests.</action>
+            <action dev="adriens" type="add">Upgraded schemacrawler target version to 12.01.01.</action>
+            <action dev="adriens" type="add">Upgraded xstream to 1.4.7.</action>
+        </release>
         <!-- Allowed action.type : add, update -->
         <release version="10.10.04" date="2014-08-19"
                description="First version of the debian installer">

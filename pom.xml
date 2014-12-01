@@ -51,6 +51,7 @@
         <jt400.version>6.7</jt400.version>
         <h2.version>1.4.182</h2.version>
         
+        
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version.version>2.7</maven-project-info-reports-plugin.version.version>
         <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
