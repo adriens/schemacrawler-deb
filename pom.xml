@@ -836,12 +836,6 @@
                                     <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler.sh</linkTarget>  
                                     <symlink>true</symlink>
                                 </data>
-                                <data>
-                                    <type>link</type>
-                                    <linkName>/usr/bin/sc</linkName>
-                                    <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler.sh</linkTarget>  
-                                    <symlink>true</symlink>
-                                </data>
                             </dataSet>
                         </configuration>
                     </execution>
