@@ -6,7 +6,7 @@ Set version in session
 
 `export SCHEMACRAWLER_VERSION=$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version | egrep -v '^\[|Downloading:' | tr -d ' \n')`
 
-Pre-requisiste
+Pre-requisite
 ------------------------------------------
 
 **DO NOT SKIP THIS STEP !**
