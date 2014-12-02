@@ -9,6 +9,8 @@ Set version in session
 Pre-requisiste
 ------------------------------------------
 
+**DO NOT SKIP THIS STEP !**
+
 To get the proper non-bugged jdbc sqlite driver (3.7.8) and to be able to successfully run the build, **you have to
 run** the following command :
 
