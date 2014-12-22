@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.sourceforge.schemacrawler</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>12.01.01</version>
+    <version>12.02.01</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
@@ -49,7 +49,7 @@
         <xpp3_min.version>1.1.4c</xpp3_min.version>
         <xstream.version>1.4.7</xstream.version>
         <jt400.version>6.7</jt400.version>
-        <h2.version>1.4.182</h2.version>
+        <h2.version>1.4.184</h2.version>
         
         
         <!-- Maven reporting plugin versions -->
@@ -406,16 +406,6 @@
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-${project.version}.jar</src>
                                     <dst>schemacrawler-${project.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-lint-${project.version}.jar</src>
-                                    <dst>schemacrawler-lint-${project.version}.jar</dst>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>

@@ -7,6 +7,13 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+	<release version="12.02.01" date="2014-12-22"
+               description="Upgrade to 12.02.01">
+            <action dev="adriens" type="add">Simple upgrade to 12.02.01</action>
+            <action dev="adriens" type="add">Upgrade h2 driver to 1.4.184</action>
+            <action dev="adriens" type="add">Removed duplicate jar entry for schemacrawler-lint</action>
+        </release>
+		
         <release version="12.01.01" date="2014-12-01"
                description="Upgraded installer to match new software distribution">
             <action dev="adriens" type="add">Refactored command line to match schemacrawler behavior</action>
