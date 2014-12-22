@@ -29,9 +29,7 @@
             <item name="Schemacrawler on SlideShare" href="http://www.slideshare.net/sualeh/schemacrawler"/>
             <item name="Download Schemacrawler" href="http://sourceforge.net/projects/schemacrawler/files/"/>
             <!-- Debian links -->
-            <item name="Debian" href="https://www.debian.org/"/>
-            <item name="Linux Mint" href="http://linuxmint.com/"/>
-            <item name="Ubuntu" href="http://www.ubuntu.com/"/>
+            <item name="Bintray Debian package" href="https://bintray.com/adriens/deb/schemacrawler/view"/>
             <!-- Other useful links -->
             <item name="Jdeb" href="https://github.com/tcurdt/jdeb"/>
         </links>
