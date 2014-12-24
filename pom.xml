@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.sourceforge.schemacrawler</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>12.02.01</version>
+    <version>12.02.02</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>

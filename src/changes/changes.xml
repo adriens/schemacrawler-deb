@@ -7,6 +7,10 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        <release version="12.02.02" date="2014-12-24"
+               description="Upgrade to 12.02.02">
+            <action dev="adriens" type="add">Simple upgrade to 12.02.02</action>
+        </release>
 	<release version="12.02.01" date="2014-12-22"
                description="Upgrade to 12.02.01">
             <action dev="adriens" type="add">Simple upgrade to 12.02.01</action>
