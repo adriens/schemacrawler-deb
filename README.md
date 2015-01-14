@@ -4,7 +4,13 @@ Schemacrawler Debian package builder
 Set version in session
 ------------------------------------------
 
-`export SCHEMACRAWLER_VERSION=$(mvn org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version | egrep -v '^\[|Downloading:' | tr -d ' \n')`
+    export SCHEMACRAWLER_VERSION=12.03.01
+
+Download and install .deb
+------------------------------------------
+
+    wget https://bintray.com/artifact/download/adriens/deb/pool/main/s/schemacrawler/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
+    sudo dpkg -i schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
 
 Pre-requisite
 ------------------------------------------
