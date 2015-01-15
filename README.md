@@ -12,7 +12,7 @@ Download and install .deb
     wget https://bintray.com/artifact/download/adriens/deb/pool/main/s/schemacrawler/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
     sudo dpkg -i schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
 
-Pre-requisite
+Pre-requisite to build the .deb yourself
 ------------------------------------------
 
 **DO NOT SKIP THIS STEP !**
