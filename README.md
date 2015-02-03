@@ -4,7 +4,7 @@ Schemacrawler Debian package builder
 Set version in session
 ------------------------------------------
 
-    export SCHEMACRAWLER_VERSION=12.03.01
+    export SCHEMACRAWLER_VERSION=12.04.01
 
 Download and install .deb
 ------------------------------------------
