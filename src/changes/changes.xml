@@ -7,6 +7,11 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        
+        <release version="12.05.01" date="2015.03.18"
+               description="Upgrade to 12.05.01">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade and debian plugin (jdeb 1.4) upgrade.</action>
+        </release>
         <release version="12.04.02" date="2015.02.12"
                description="Upgrade to 12.04.02">
             <action dev="adriens" type="add">Bug fix on oracle command line.</action>
