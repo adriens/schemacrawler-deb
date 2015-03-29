@@ -11,9 +11,9 @@ Steps to follow to publish a new debian version
 5. Update [changes.xml](src/changes/changes.xml) : add a new section, with the good version, then commit (locally)
 6. build mvn clean package
 7. test install :
-⋅⋅1. Remove previous install
-⋅⋅2. Install the newly built version
-⋅⋅3. Test install
+    1. Remove previous install
+    2. Install the newly built version
+    3. Test install
 8. Push commit in the upstream
 9. Create tag (tag name is the schemacrawler version name)
 10. Push to the newly created tag
