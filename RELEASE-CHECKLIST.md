@@ -9,8 +9,7 @@ Steps to follow to publish a new debian version
 3. Check in the lib directory if there are any required dependency update (pom.xml vs jars in the zip distribution) : if there are some, upgrade dependencies, then commit (locally)
 4. Update [README.md](README.md) : in the export section, update with the good version, then commit (locally)
 5. Update [changes.xml](src/changes/changes.xml) : add a new section, with the good version, then commit (locally)
-6. build
-    (mvn clean package)
+6. build mvn clean package
 7. test install :
 ⋅⋅1. Remove previous install
 ⋅⋅2. Install the newly built version
