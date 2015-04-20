@@ -1,7 +1,7 @@
 Schemacrawler Debian package builder
 ==========================================
 
- ![Download](https://api.bintray.com/packages/adriens/deb/schemacrawler/images/download.svg) ](https://bintray.com/adriens/deb/schemacrawler/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/adriens/deb/schemacrawler/images/download.svg) ](https://bintray.com/adriens/deb/schemacrawler/_latestVersion)
 
 Set version in session
 ------------------------------------------
