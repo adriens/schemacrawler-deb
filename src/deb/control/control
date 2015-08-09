@@ -5,8 +5,8 @@ Priority: optional
 Architecture: all
 Recommends: graphviz
 Maintainer: Adrien.Sales <Adrien.Sales@gmail.com>
-Description: Schemacrawler (http://schemacrawler.sourceforge.net/)
- Schemacrawler (http://schemacrawler.sourceforge.net/) is a free database schema
+Description: Schemacrawler (http://sualeh.github.io/SchemaCrawler/)
+ Schemacrawler (http://sualeh.github.io/SchemaCrawler/) is a free database schema
  discovery and comprehension tool.
  
  SchemaCrawler has a good mix useful features for data governance. You can search
