@@ -9,5 +9,3 @@ cache:
   - $HOME/.m2
 before_install:
   - mvn install:install-file -DgroupId=org.xerial -DartifactId=sqlite-jdbc -Dversion=3.7.8 -Dfile=lib/sqlite-jdbc-3.7.8.jar -Dpackaging=jar -DgeneratePom=true
-after_success:
-  - sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
