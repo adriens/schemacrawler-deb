@@ -24,13 +24,13 @@
             <email>Adrien.Sales@gmail.com</email>
             <id>adriens</id>
             <name>Adrien Sales</name>
-            <organization>Sourceforge</organization>
-            <organizationUrl>http://sourceforge.net</organizationUrl>
+            <organization>github</organization>
+            <organizationUrl>http://github.com/</organizationUrl>
             <roles>
                 <role>Developer</role>
             </roles>
             <timezone>+11</timezone>
-            <url>http://sourceforge.net/u/adriens/profile/</url>
+            <url>https://github.com/adriens</url>
         </developer>
     </developers>
     
