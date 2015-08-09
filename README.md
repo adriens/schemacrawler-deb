@@ -1,6 +1,6 @@
 Schemacrawler Debian package builder
 ==========================================
-
+[![Build Status](https://travis-ci.org/adriens/schemacrawler-deb.svg?branch=master)](https://travis-ci.org/adriens/schemacrawler-deb)
  [ ![Download](https://api.bintray.com/packages/adriens/deb/schemacrawler/images/download.svg) ](https://bintray.com/adriens/deb/schemacrawler/_latestVersion)
 
 Set version in session
