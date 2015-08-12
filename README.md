@@ -1,5 +1,7 @@
 Schemacrawler Debian package builder
 ==========================================
+
+[![Join the chat at https://gitter.im/adriens/schemacrawler-deb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adriens/schemacrawler-deb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/adriens/schemacrawler-deb.svg?branch=master)](https://travis-ci.org/adriens/schemacrawler-deb)
  [ ![Download](https://api.bintray.com/packages/adriens/deb/schemacrawler/images/download.svg) ](https://bintray.com/adriens/deb/schemacrawler/_latestVersion)
 
