@@ -68,14 +68,6 @@
             <version>${project.version}</version>
         </dependency>
 
-        <!--
-        <dependency>
-            <groupId>net.sourceforge.schemacrawler</groupId>
-            <artifactId>schemacrawler-lint</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        -->
-
         <!-- Database Drivers-->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -267,16 +259,6 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
-                                <!-- Get schemacrawler-derby  -->
-                                <!--<artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-derby</artifactId>
-                                    <version>${project.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
-                                -->
                                 
                                 <!-- HSQLDB Section -->
                                 <!-- Get the driver-->
@@ -554,17 +536,6 @@
                                         <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
                                     </mapper>
                                 </data>
-                                <!--<data>
-                                    <src>${project.build.directory}/lib/schemacrawler-derby-${project.version}.jar</src>
-                                    <dst>schemacrawler-derby-${project.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                -->
                                 
                                 <!-- HyperSQL resources -->
                                 <data>
