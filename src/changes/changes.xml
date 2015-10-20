@@ -7,6 +7,12 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        
+        <release version="14.04.03" date="2015.10.20"
+               description="Upgrade to 14.04.03">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.03.01</action>
+            <action dev="adriens" type="add">MariaDb support and driver added.</action>
+        </release>
         <release version="14.03.01" date="2015.09.10"
                description="Upgrade to 14.03.01">
             <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.03.01</action>
