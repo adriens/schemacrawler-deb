@@ -8,6 +8,10 @@
     </properties>
     <body>
         
+        <release version="14.04.04" date="2015.11.12"
+               description="Upgrade to 14.04.04">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.04.04</action>
+        </release>
         <release version="14.04.03" date="2015.10.20"
                description="Upgrade to 14.04.03">
             <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.03.01</action>
