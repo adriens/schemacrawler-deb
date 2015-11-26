@@ -8,6 +8,11 @@
     </properties>
     <body>
         
+        <release version="14.05.02" date="2015.11.27"
+               description="Upgrade to 14.05.02">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/tree/v14.05.02</action>
+            <action dev="adriens" type="add">jt400 upgrade to 8.7 for DB2/400.</action>
+        </release>
         <release version="14.04.04" date="2015.11.12"
                description="Upgrade to 14.04.04">
             <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.04.04</action>
