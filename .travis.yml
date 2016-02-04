@@ -15,6 +15,7 @@ deploy:
     secure: Vwl5dp9As8OjcO6vcMivSqc92JGpsWJcX1xGhFhpjk4Jo0wBaFEs+SgfxqU59lPiF6r7uoBTpHUcnuYqEWtWMq7r63RMxEGXnbJgsKk5yorkBqroQDABl/L/WW6LOudXzTY8yDWou8Bcw0YUZy2rl1+2IlVoCmmfNkoGlaE3wyY=
   file: target/*.deb
   skip_cleanup: true
+  all_branches: true
   on:
     tags: true
   on:
