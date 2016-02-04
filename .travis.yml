@@ -9,3 +9,10 @@ cache:
   - $HOME/.m2
 before_install:
   - mvn install:install-file -DgroupId=org.xerial -DartifactId=sqlite-jdbc -Dversion=3.7.8 -Dfile=lib/sqlite-jdbc-3.7.8.jar -Dpackaging=jar -DgeneratePom=true
+deploy:
+  provider: releases
+  api_key:
+    secure: Vwl5dp9As8OjcO6vcMivSqc92JGpsWJcX1xGhFhpjk4Jo0wBaFEs+SgfxqU59lPiF6r7uoBTpHUcnuYqEWtWMq7r63RMxEGXnbJgsKk5yorkBqroQDABl/L/WW6LOudXzTY8yDWou8Bcw0YUZy2rl1+2IlVoCmmfNkoGlaE3wyY=
+  file: target/*.deb
+  on:
+    repo: adriens/schemacrawler-deb  
