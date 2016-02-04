@@ -22,4 +22,5 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: adriens/schemacrawler-deb  
+    repo: adriens/schemacrawler-deb
+    all_branches: true
