@@ -12,8 +12,7 @@ Set the version in session
 Download and install .deb
 ------------------------------------------
 
-    wget https://bintray.com/artifact/download/adriens/deb/pool/main/s/schemacrawler/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
-    sudo dpkg -i schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
+Go on the [Release Page](https://github.com/adriens/schemacrawler-deb/releases/latest) and get the debian file.
 
 Pre-requisite to build the .deb yourself
 ------------------------------------------
