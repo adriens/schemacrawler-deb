@@ -14,6 +14,10 @@ Download and install .deb
 
 Go on the [Release Page](https://github.com/adriens/schemacrawler-deb/releases/latest) and get the debian file.
 
+or download it from your shell assuming you have set version in the session :
+
+    wget  https://github.com/adriens/schemacrawler-deb/releases/download/${SCHEMACRAWLER_VERSION}/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
+
 Pre-requisite to build the .deb yourself
 ------------------------------------------
 
