@@ -1,7 +1,7 @@
 Schemacrawler Debian package builder
 ==========================================
 
-[![Join the chat at https://gitter.im/adriens/schemacrawler-deb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adriens/schemacrawler-deb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![endorse](https://api.coderwall.com/adriens/endorsecount.png)](https://coderwall.com/adriens) [![Join the chat at https://gitter.im/adriens/schemacrawler-deb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adriens/schemacrawler-deb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/adriens/schemacrawler-deb.svg?branch=master)](https://travis-ci.org/adriens/schemacrawler-deb) [![Dependency Status](https://www.versioneye.com/user/projects/56b687660a0ff5002c860389/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56b687660a0ff5002c860389)
 
 Set the version in session
