@@ -54,12 +54,22 @@
         <xstream.version>1.4.8</xstream.version>
         <jt400.version>8.7</jt400.version>
         
+        <!-- Addition lints -->
+        <schemacrawler-additionnallints.version>1.1.4</schemacrawler-additionnallints.version>
+        
         
         
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
         <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
     </properties>
+    
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
     
     <dependencies>
         <!-- Schemacrawler dependencies -->
@@ -136,6 +146,13 @@
             <artifactId>jt400</artifactId>
             <version>${jt400.version}</version>
         </dependency>
+        
+        <!-- Additional lints dependency -->
+        <dependency>
+	    <groupId>com.github.mbarre</groupId>
+	    <artifactId>schemacrawler-additionnallints</artifactId>
+	    <version>${schemacrawler-additionnallints.version}</version>
+	</dependency>
 
     </dependencies>
     
@@ -392,6 +409,16 @@
                                     <groupId>net.sf.jt400</groupId>
                                     <artifactId>jt400</artifactId>
                                     <version>${jt400.version}</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
+                                </artifactItem>
+                                
+                                <!-- Get the driver-->
+                                <artifactItem>
+                                    <groupId>com.github.mbarre</groupId>
+                                    <artifactId>schemacrawler-additionnallints</artifactId>
+                                    <version>${schemacrawler-additionnallints.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -762,6 +789,18 @@
                                         <type>perm</type>
                                         <filemode>555</filemode>
                                         <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                
+                                <!-- Additional lints -->
+                                <data>
+                                    <src>${project.build.directory}/lib/schemacrawler-additionnallints-${schemacrawler-additionnallints.version}.jar</src>
+                                    <dst>schemacrawler-additionnallints-${schemacrawler-additionnallints.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/additional-lints/</prefix>
                                     </mapper>
                                 </data>
                                 
