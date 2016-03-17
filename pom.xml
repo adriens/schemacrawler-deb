@@ -803,6 +803,24 @@
                                         <prefix>/opt/schemacrawler-${project.version}/additional-lints/</prefix>
                                     </mapper>
                                 </data>
+                                <data>
+                                    <src>src/main/resources/ADDITIONAL-LINTS.LICENSE.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/additional-lints/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/ADDITIONAL-LINTS.HOWTO.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/additional-lints/</prefix>
+                                    </mapper>
+                                </data>
                                 
                                 <!-- open source drivers licence manifests -->
                                 <data>
