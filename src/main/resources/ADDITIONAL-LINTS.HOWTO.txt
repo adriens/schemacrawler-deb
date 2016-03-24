@@ -6,6 +6,5 @@ Copy this file to /opt/schemacrawler/lib to get these new lints up and running.
 
 More details about these additional lints on the project homepage :
 
-https://github.com/mbarre/schemacrawler-additionnallints
-
+http://mbarre.github.io/schemacrawler-additionnallints/
 
