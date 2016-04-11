@@ -55,7 +55,7 @@
         <jt400.version>8.7</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additionnallints.version>1.1.4</schemacrawler-additionnallints.version>
+        <schemacrawler-additionnallints.version>1.1.5</schemacrawler-additionnallints.version>
         
         
         
@@ -796,6 +796,15 @@
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-additionnallints-${schemacrawler-additionnallints.version}.jar</src>
                                     <dst>schemacrawler-additionnallints-${schemacrawler-additionnallints.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/additional-lints/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/ADDITIONAL-LINTS.README.md</src>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>
