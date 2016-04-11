@@ -1,6 +1,6 @@
 ## Install
 
-Copy this file to /opt/schemacrawler/lib to get these new lints up and running.
+Copy the file schemacrawler-additionnallints-X.X.X.jar to /opt/schemacrawler/lib to get these new lints up and running.
 
 ## About
 
