@@ -55,7 +55,7 @@
         <jt400.version>9.0</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additionnallints.version>1.1.7</schemacrawler-additionnallints.version>
+        <schemacrawler-additional-lints.version>1.1.7</schemacrawler-additional-lints.version>
         
         
         
@@ -150,8 +150,8 @@
         <!-- Additional lints dependency -->
         <dependency>
 	    <groupId>com.github.mbarre</groupId>
-	    <artifactId>schemacrawler-additionnallints</artifactId>
-	    <version>${schemacrawler-additionnallints.version}</version>
+	    <artifactId>schemacrawler-additional-lints</artifactId>
+	    <version>${schemacrawler-additional-lints.version}</version>
 	</dependency>
 
     </dependencies>
@@ -417,8 +417,8 @@
                                 <!-- Get the driver-->
                                 <artifactItem>
                                     <groupId>com.github.mbarre</groupId>
-                                    <artifactId>schemacrawler-additionnallints</artifactId>
-                                    <version>${schemacrawler-additionnallints.version}</version>
+                                    <artifactId>schemacrawler-additional-lints</artifactId>
+                                    <version>${schemacrawler-additional-lints.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -794,8 +794,8 @@
                                 
                                 <!-- Additional lints -->
                                 <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-additionnallints-${schemacrawler-additionnallints.version}.jar</src>
-                                    <dst>schemacrawler-additionnallints-${schemacrawler-additionnallints.version}.jar</dst>
+                                    <src>${project.build.directory}/lib/schemacrawler-additionnal-lints-${schemacrawler-additional-lints.version}.jar</src>
+                                    <dst>schemacrawler-additional-lints-${schemacrawler-additional-lints.version}.jar</dst>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>
