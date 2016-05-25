@@ -55,9 +55,7 @@
         <jt400.version>9.0</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additional-lints.version>1.1.7</schemacrawler-additional-lints.version>
-        
-        
+        <schemacrawler-additional-lints.version>1.1.8</schemacrawler-additional-lints.version>
         
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
@@ -794,7 +792,7 @@
                                 
                                 <!-- Additional lints -->
                                 <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-additionnal-lints-${schemacrawler-additional-lints.version}.jar</src>
+                                    <src>${project.build.directory}/lib/schemacrawler-additional-lints-${schemacrawler-additional-lints.version}.jar</src>
                                     <dst>schemacrawler-additional-lints-${schemacrawler-additional-lints.version}.jar</dst>
                                     <type>file</type>
                                     <mapper>
