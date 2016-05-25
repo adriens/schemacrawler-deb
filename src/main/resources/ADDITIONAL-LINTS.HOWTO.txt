@@ -1,10 +1,10 @@
 ## Install
 
-Copy the file schemacrawler-additionnallints-X.X.X.jar to /opt/schemacrawler/lib to get these new lints up and running.
+Copy the file schemacrawler-additional-lints-X.X.X.jar to /opt/schemacrawler/lib to get these new lints up and running.
 
 ## About
 
 More details about these additional lints on the project homepage :
 
-http://mbarre.github.io/schemacrawler-additionnallints/
+http://mbarre.github.io/schemacrawler-additional-lints/
 
