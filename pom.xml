@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.adriens</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>14.08.05</version>
+    <version>14.08.06</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
