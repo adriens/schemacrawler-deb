@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.adriens</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>14.08.06</version>
+    <version>14.09.02</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
@@ -214,16 +214,6 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
-                                <!-- Get schemacrawler-mariadb  -->
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-mariadb</artifactId>
-                                    <version>${project.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
-                                
                                 
                                 <!-- MySQL Section -->
                                 <!-- Get the driver-->
@@ -496,18 +486,6 @@
                                         <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
                                     </mapper>
                                 </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-mariadb-${project.version}.jar</src>
-                                    <dst>schemacrawler-mariadb-${project.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                
-                                
                                 <!-- Mysql resources -->
                                 <data>
                                     <src>${project.build.directory}/lib/mysql-connector-java-${mysql.version}.jar</src>
