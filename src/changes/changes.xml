@@ -7,6 +7,10 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        <release version="14.10.01" date="2016.09.06"
+               description="Upgrade to 14.10.01">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/tree/v14.10.01</action>
+        </release>
         <release version="14.09.02" date="2016.08.05"
                description="Upgrade to 14.09.03">
             <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/tree/v14.09.03</action>

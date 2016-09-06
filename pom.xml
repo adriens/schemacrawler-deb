@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.adriens</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>14.09.03</version>
+    <version>14.10.01</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
@@ -316,15 +316,6 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
-                                <!-- Get schemacrawler-sqlite  -->
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-h2</artifactId>
-                                    <version>${project.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
                                 
                                 <!-- Offline -->
                                 <artifactItem>
@@ -596,17 +587,7 @@
                                         <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
                                     </mapper>
                                 </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-h2-${project.version}.jar</src>
-                                    <dst>schemacrawler-h2-${project.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                
+
                                 <!-- Offline Resources -->
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-offline-${project.version}.jar</src>
