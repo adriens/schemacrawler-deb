@@ -9,7 +9,7 @@
     <body>
         <release version="14.10.06" date="2016.11.14"
                description="Upgrade to 14.10.06">
-            <action dev="adriens" type="add">Standard schemacrawler upgrade and db drivers upgrades. See https://github.com/sualeh/SchemaCrawler/tree/v14.10.06</action>
+            <action dev="adriens" type="add">Standard schemacrawler upgrade and db drivers upgrades. Added config directory. See https://github.com/sualeh/SchemaCrawler/tree/v14.10.06</action>
         </release>
         <release version="14.10.01" date="2016.09.06"
                description="Upgrade to 14.10.01">

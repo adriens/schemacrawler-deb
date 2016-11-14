@@ -423,6 +423,7 @@
                         </goals>
                         <configuration>
                             <dataSet>
+                                <!-- Core schemacrawler libraries -->
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-${project.version}.jar</src>
                                     <dst>schemacrawler-${project.version}.jar</dst>
@@ -443,7 +444,30 @@
                                         <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
                                     </mapper>
                                 </data>
-
+                                
+                                <!-- config properties -->
+                                <data>
+                                    <src>src/main/resources/schemacrawler.colormap.properties</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/config</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/schemacrawler.config.properties</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/config</prefix>
+                                    </mapper>
+                                </data>
+                                
+                                
+                                
+                                <!-- Jdbc drivers resoruces -->
                                 <!-- Postgres resources -->
                                 <data>
                                     <src>${project.build.directory}/lib/postgresql-${postgresql.version}.jar</src>
