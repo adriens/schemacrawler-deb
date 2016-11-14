@@ -59,7 +59,7 @@
         
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
-        <maven-changes-plugin.version>2.12</maven-changes-plugin.version>
+        <maven-changes-plugin.version>2.12.1</maven-changes-plugin.version>
     </properties>
     
     <repositories>
