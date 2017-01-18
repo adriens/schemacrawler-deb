@@ -55,7 +55,7 @@
         <jt400.version>9.1</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additional-lints.version>1.1.10</schemacrawler-additional-lints.version>
+        <schemacrawler-additional-lints.version>1.1.11</schemacrawler-additional-lints.version>
         
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
