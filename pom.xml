@@ -44,7 +44,7 @@
         
         <h2.version>1.4.193</h2.version>
         <hsqldb.version>2.3.4</hsqldb.version>
-        <jtds.version>1.3.1</jtds.version>
+        <mssql.version>6.1.0.jre8</mssql.version>
         <mariadb.version>1.5.6</mariadb.version>
         <mysql.version>6.0.5</mysql.version>
         <postgresql.version>9.4.1212</postgresql.version>
@@ -95,9 +95,9 @@
             <version>${mysql.version}</version>
         </dependency>
         <dependency>
-            <groupId>net.sourceforge.jtds</groupId>
-            <artifactId>jtds</artifactId>
-            <version>${jtds.version}</version>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>${mssql.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.derby</groupId>
@@ -238,9 +238,9 @@
                                 <!-- SQLServer Section -->
                                 <!-- Get the driver-->
                                 <artifactItem>
-                                    <groupId>net.sourceforge.jtds</groupId>
-                                    <artifactId>jtds</artifactId>
-                                    <version>${jtds.version}</version>
+                                    <groupId>com.microsoft.sqlserver</groupId>
+                                    <artifactId>mssql-jdbc</artifactId>
+                                    <version>${mssql.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -525,8 +525,8 @@
                                 
                                 <!-- SQLServer resources -->
                                 <data>
-                                    <src>${project.build.directory}/lib/jtds-${jtds.version}.jar</src>
-                                    <dst>jtds-${jtds.version}.jar</dst>
+                                    <src>${project.build.directory}/lib/mssql-jdbc-${mssql.version}.jar</src>
+                                    <dst>mssql-jdbc-${mssql.version}.jar</dst>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>
