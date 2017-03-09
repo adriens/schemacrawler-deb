@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.adriens</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>14.14.01</version>
+    <version>14.14.03</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
@@ -55,7 +55,7 @@
         <jt400.version>9.2</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additional-lints.version>1.1.11</schemacrawler-additional-lints.version>
+        <schemacrawler-additional-lints.version>1.02.00</schemacrawler-additional-lints.version>
         
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
