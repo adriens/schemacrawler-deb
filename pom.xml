@@ -45,7 +45,7 @@
         <h2.version>1.4.193</h2.version>
         <hsqldb.version>2.3.4</hsqldb.version>
         <mssql.version>6.1.0.jre8</mssql.version>
-        <mariadb.version>1.5.7</mariadb.version>
+        <mariadb.version>1.5.8</mariadb.version>
         <mysql.version>6.0.5</mysql.version>
         <postgresql.version>42.0.0</postgresql.version>
         <sqlite.version>3.7.8</sqlite.version>
