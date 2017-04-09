@@ -7,6 +7,14 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        <release version="14.15.04" date="2017.04.10"
+               description="Upgrade to 14.15.04">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade and additional lints. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.15.04</action>
+        </release>
+        <release version="14.15.03" date="2017.03.31"
+               description="Upgrade to 14.15.03">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade and additional lints. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.15.03</action>
+        </release>
         <release version="14.15.02" date="2017.03.24"
                description="Upgrade to 14.15.02">
             <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.15.02</action>
