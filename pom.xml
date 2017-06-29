@@ -363,15 +363,6 @@
                                 </artifactItem>
                                 
                                 
-                                <!-- Sybase IQ -->
-                                <artifactItem>
-                                    <groupId>us.fatehi</groupId>
-                                    <artifactId>schemacrawler-sybaseiq</artifactId>
-                                    <version>${project.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
                                 
                                 <!-- Oracle -->
                                 <artifactItem>
@@ -678,17 +669,6 @@
                                     </mapper>
                                 </data>
                                 
-                                <!-- Sybase IQ Resources -->
-                                <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-sybaseiq-${project.version}.jar</src>
-                                    <dst>schemacrawler-sybaseiq-${project.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
                                 
                                 <!-- Oracle Resources -->
                                 <data>
