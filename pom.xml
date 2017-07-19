@@ -385,7 +385,7 @@
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
                                 
-                                <!-- Get the driver-->
+                                <!-- Get Additional lint -->
                                 <artifactItem>
                                     <groupId>com.github.mbarre</groupId>
                                     <artifactId>schemacrawler-additional-lints</artifactId>
