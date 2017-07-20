@@ -57,6 +57,9 @@
         <!-- Addition lints -->
         <schemacrawler-additional-lints.version>1.02.03</schemacrawler-additional-lints.version>
         
+        <!-- Additional command for native csv ouput-->
+        <schemacrawler-csv-plugin.version>1.0</schemacrawler-csv-plugin.version>
+        
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
         <maven-changes-plugin.version>2.12.1</maven-changes-plugin.version>
@@ -151,6 +154,15 @@
 	    <groupId>com.github.mbarre</groupId>
 	    <artifactId>schemacrawler-additional-lints</artifactId>
 	    <version>${schemacrawler-additional-lints.version}</version>
+	</dependency>
+        
+        
+        <!-- Additional csv command plugin export,
+        see https://github.com/adriens/schemacrawler-csv-plugin -->
+        <dependency>
+	    <groupId>com.github.adriens</groupId>
+	    <artifactId>schemacrawler-csv-plugin</artifactId>
+	    <version>${schemacrawler-csv-plugin.version}</version>
 	</dependency>
 
     </dependencies>
@@ -395,6 +407,16 @@
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
                                 
+                                <!-- Get additional csv command -->
+                                <artifactItem>
+                                    <groupId>com.github.adriens</groupId>
+                                    <artifactId>schemacrawler-csv-plugin</artifactId>
+                                    <version>${schemacrawler-csv-plugin.version}</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
+                                </artifactItem>
+                                        
                             </artifactItems>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
                             <overWriteReleases>false</overWriteReleases>
@@ -790,6 +812,28 @@
                                         <type>perm</type>
                                         <filemode>555</filemode>
                                         <prefix>/opt/schemacrawler-${project.version}/additional-lints/</prefix>
+                                    </mapper>
+                                </data>
+                                
+                                <!-- Additional commands -->
+                                <!-- Additional commands -->
+                                <data>
+                                    <src>${project.build.directory}/lib/schemacrawler-csv-plugin-${schemacrawler-csv-plugin.version}.jar</src>
+                                    <dst>schemacrawler-csv-plugin-${schemacrawler-csv-plugin.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/additional-commands/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/ADDITIONAL-COMMANDS.README.md</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/additional-commands/</prefix>
                                     </mapper>
                                 </data>
                                 
