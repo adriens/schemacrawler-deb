@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.adriens</groupId>
     <artifactId>schemacrawler-deb</artifactId>
-    <version>14.16.03</version>
+    <version>14.16.04</version>
     <packaging>jar</packaging>
     
     <name>Schemacrawler Debian Packager</name>
@@ -55,7 +55,7 @@
         <jt400.version>9.3</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additional-lints.version>1.02.03</schemacrawler-additional-lints.version>
+        <schemacrawler-additional-lints.version>1.03.00</schemacrawler-additional-lints.version>
         
         <!-- Additional command for native csv ouput-->
         <schemacrawler-csv-plugin.version>1.0</schemacrawler-csv-plugin.version>
