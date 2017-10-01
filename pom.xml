@@ -58,7 +58,7 @@
         <schemacrawler-additional-lints.version>1.03.00</schemacrawler-additional-lints.version>
         
         <!-- Additional command for native csv ouput-->
-        <schemacrawler-csv-plugin.version>1.0</schemacrawler-csv-plugin.version>
+        <schemacrawler-csv-plugin.version>1.2</schemacrawler-csv-plugin.version>
         
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
