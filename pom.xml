@@ -55,7 +55,7 @@
         <jt400.version>9.4</jt400.version>
         
         <!-- Addition lints -->
-        <schemacrawler-additional-lints.version>1.03.00</schemacrawler-additional-lints.version>
+        <schemacrawler-additional-lints.version>1.03.01</schemacrawler-additional-lints.version>
         
         <!-- Additional command for native csv ouput-->
         <schemacrawler-csv-plugin.version>1.2</schemacrawler-csv-plugin.version>
