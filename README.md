@@ -24,16 +24,6 @@ or download it from your shell assuming you have set version in the session :
 
     wget  https://github.com/adriens/schemacrawler-deb/releases/download/${SCHEMACRAWLER_VERSION}/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb
 
-Pre-requisite to build the .deb yourself
-------------------------------------------
-
-**DO NOT SKIP THIS STEP !**
-
-To get the proper non-bugged jdbc sqlite driver (3.7.8) and to be able to successfully run the build, **you have to
-run** the following command :
-
-    mvn install:install-file -DgroupId=org.xerial -DartifactId=sqlite-jdbc -Dversion=3.7.8 -Dfile=lib/sqlite-jdbc-3.7.8.jar -Dpackaging=jar -DgeneratePom=true
-
 Build docs and debian installer
 ------------------------------------------
 
