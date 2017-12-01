@@ -7,8 +7,6 @@ cache:
   directories:
   - .autoconf
   - $HOME/.m2
-before_install:
-  - mvn install:install-file -DgroupId=org.xerial -DartifactId=sqlite-jdbc -Dversion=3.7.8 -Dfile=lib/sqlite-jdbc-3.7.8.jar -Dpackaging=jar -DgeneratePom=true
 before_deploy:
   - export RELEASE_PKG_FILE=$(ls target/*.deb)
   - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
