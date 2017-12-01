@@ -7,6 +7,12 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
+        <release version="14.17.03" date="2017.12.01"
+               description="Upgrade to 14.17.01">
+            <action dev="adriens" type="add">Standard schemacrawler upgrade and additional lints. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.17.03</action>
+            <action dev="adriens" type="add">Sqllit jdbc driver upgrade</action>
+        </release>
+        
         <release version="14.17.01" date="2017.11.20"
                description="Upgrade to 14.17.01">
             <action dev="adriens" type="add">Standard schemacrawler upgrade and additional lints. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.17.01</action>
