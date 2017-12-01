@@ -410,8 +410,8 @@
                                 <!-- Get additional csv command -->
                                 <artifactItem>
                                     <groupId>com.github.adriens</groupId>
-                                    <artifactId>schemacrawler-csv-plugin</artifactId>
-                                    <version>${schemacrawler-csv-plugin.version}</version>
+                                    <artifactId>schemacrawler-plugin-dashboard</artifactId>
+                                    <version>${schemacrawler-plugin-dashboard.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -818,8 +818,8 @@
                                 <!-- Additional commands -->
                                 <!-- Additional commands -->
                                 <data>
-                                    <src>${project.build.directory}/lib/schemacrawler-csv-plugin-${schemacrawler-csv-plugin.version}.jar</src>
-                                    <dst>schemacrawler-csv-plugin-${schemacrawler-csv-plugin.version}.jar</dst>
+                                    <src>${project.build.directory}/lib/schemacrawler-plugin-dashboard-${schemacrawler-plugin-dashboard.version}.jar</src>
+                                    <dst>schemacrawler-plugin-dashboard-${schemacrawler-plugin-dashboard.version}.jar</dst>
                                     <type>file</type>
                                     <mapper>
                                         <type>perm</type>
