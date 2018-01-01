@@ -7,9 +7,9 @@
         <author email="Adrien.Sales@gmail.com">Adrien SALES</author>
     </properties>
     <body>
-        <release version="14.17.04" date="2018.01.02"
+        <release version="14.17.05" date="2018.01.02"
                description="Upgrade to 14.17.04">
-            <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.17.04</action>
+            <action dev="adriens" type="add">Standard schemacrawler upgrade. See https://github.com/sualeh/SchemaCrawler/releases/tag/v14.17.05</action>
             <action dev="adriens" type="add">Sqllite jdbc driver upgrade</action>
             <action dev="adriens" type="add">MariaDb jdbc driver upgrade</action>
         </release>
