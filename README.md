@@ -3,8 +3,6 @@ Schemacrawler Debian package builder
 
 [![Join the chat at https://gitter.im/adriens/schemacrawler-deb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adriens/schemacrawler-deb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/adriens/schemacrawler-deb.svg?branch=master)](https://travis-ci.org/adriens/schemacrawler-deb) 
-[![Dependency Status](https://beta.gemnasium.com/badges/github.com/adriens/schemacrawler-deb.svg)](https://beta.gemnasium.com/projects/github.com/adriens/schemacrawler-deb)
-
 [![Github Releases](https://img.shields.io/github/downloads/adriens/schemacrawler-deb/latest/total.svg?maxAge=2592000)](http://www.somsubhra.com/github-release-stats/?username=adriens&repository=schemacrawler-deb)[![Github All Releases](https://img.shields.io/github/downloads/adriens/schemacrawler-deb/total.svg?maxAge=2592000)](http://www.somsubhra.com/github-release-stats/?username=adriens&repository=schemacrawler-deb)
 
 <a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
