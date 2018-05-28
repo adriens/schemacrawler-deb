@@ -63,7 +63,7 @@
         <!-- Maven reporting plugin versions -->
         <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
         <maven-changes-plugin.version>2.12.1</maven-changes-plugin.version>
-        <maven-dependency-plugin.version>3.1.0</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
     </properties>
     
     <repositories>
