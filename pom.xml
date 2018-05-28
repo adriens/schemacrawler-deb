@@ -78,50 +78,50 @@
         <dependency>
             <groupId>us.fatehi</groupId>
             <artifactId>schemacrawler</artifactId>
-            <version>14.21.02</version>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- Database Drivers-->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>14.21.02</version>
+            <version>${postgresql.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>14.21.02</version>
+            <version>${mariadb.version}</version>
         </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>14.21.02</version>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
-            <version>14.21.02</version>
+            <version>${mssql.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derbyclient</artifactId>
-            <version>14.21.02</version>
+            <version>${derby.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
-            <version>14.21.02</version>
+            <version>${hsqldb.version}</version>
         </dependency>
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>14.21.02</version>
+            <version>${sqlite.version}</version>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>14.21.02</version>
+            <version>${h2.version}</version>
         </dependency>
 
 
@@ -129,31 +129,31 @@
         <dependency>
             <groupId>xmlpull</groupId>
             <artifactId>xmlpull</artifactId>
-            <version>14.21.02</version>
+            <version>${xmlpull.version}</version>
         </dependency>
         <dependency>
             <groupId>xpp3</groupId>
             <artifactId>xpp3_min</artifactId>
-            <version>14.21.02</version>
+            <version>${xpp3_min.version}</version>
         </dependency>
         <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
             <artifactId>xstream</artifactId>
-            <version>14.21.02</version>
+            <version>${xstream.version}</version>
         </dependency>
         
         <!-- DB2/400 driver-->
         <dependency>
             <groupId>net.sf.jt400</groupId>
             <artifactId>jt400</artifactId>
-            <version>14.21.02</version>
+            <version>${jt400.version}</version>
         </dependency>
         
         <!-- Additional lints dependency -->
         <dependency>
 	    <groupId>com.github.mbarre</groupId>
 	    <artifactId>schemacrawler-additional-lints</artifactId>
-	    <version>14.21.02</version>
+	    <version>${schemacrawler-additional-lints.version}</version>
 	</dependency>
         
         
@@ -162,7 +162,7 @@
         <dependency>
 	    <groupId>com.github.adriens</groupId>
 	    <artifactId>schemacrawler-plugin-dashboard</artifactId>
-	    <version>14.21.02</version>
+	    <version>${schemacrawler-plugin-dashboard.version}</version>
 	</dependency>
 
     </dependencies>
@@ -172,7 +172,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>14.21.02</version>
+                <version>${maven-dependency-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>copy</id>
@@ -185,14 +185,14 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-lint</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
                                 </artifactItem>
@@ -202,7 +202,7 @@
                                 <artifactItem>
                                     <groupId>org.postgresql</groupId>
                                     <artifactId>postgresql</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${postgresql.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -211,7 +211,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-postgresql</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -222,7 +222,7 @@
                                 <artifactItem>
                                     <groupId>org.mariadb.jdbc</groupId>
                                     <artifactId>mariadb-java-client</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${mariadb.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -233,7 +233,7 @@
                                 <artifactItem>
                                     <groupId>mysql</groupId>
                                     <artifactId>mysql-connector-java</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${mysql.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -242,7 +242,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-mysql</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -253,7 +253,7 @@
                                 <artifactItem>
                                     <groupId>com.microsoft.sqlserver</groupId>
                                     <artifactId>mssql-jdbc</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${mssql.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -262,7 +262,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-sqlserver</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -273,7 +273,7 @@
                                 <artifactItem>
                                     <groupId>org.apache.derby</groupId>
                                     <artifactId>derbyclient</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${derby.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -284,7 +284,7 @@
                                 <artifactItem>
                                     <groupId>org.hsqldb</groupId>
                                     <artifactId>hsqldb</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${hsqldb.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -293,7 +293,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-hsqldb</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -304,7 +304,7 @@
                                 <artifactItem>
                                     <groupId>org.xerial</groupId>
                                     <artifactId>sqlite-jdbc</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${sqlite.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -313,7 +313,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-sqlite</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -324,7 +324,7 @@
                                 <artifactItem>
                                     <groupId>com.h2database</groupId>
                                     <artifactId>h2</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${h2.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -334,7 +334,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-offline</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -342,7 +342,7 @@
                                 <artifactItem>
                                     <groupId>com.thoughtworks.xstream</groupId>
                                     <artifactId>xstream</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${xstream.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -350,7 +350,7 @@
                                 <artifactItem>
                                     <groupId>xpp3</groupId>
                                     <artifactId>xpp3_min</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${xpp3_min.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -358,7 +358,7 @@
                                 <artifactItem>
                                     <groupId>xmlpull</groupId>
                                     <artifactId>xmlpull</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${xmlpull.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -368,7 +368,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-db2</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -380,7 +380,7 @@
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-oracle</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -391,7 +391,7 @@
                                 <artifactItem>
                                     <groupId>net.sf.jt400</groupId>
                                     <artifactId>jt400</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${jt400.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -401,7 +401,7 @@
                                 <artifactItem>
                                     <groupId>com.github.mbarre</groupId>
                                     <artifactId>schemacrawler-additional-lints</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${schemacrawler-additional-lints.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -411,7 +411,7 @@
                                 <artifactItem>
                                     <groupId>com.github.adriens</groupId>
                                     <artifactId>schemacrawler-plugin-dashboard</artifactId>
-                                    <version>14.21.02</version>
+                                    <version>${schemacrawler-plugin-dashboard.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
@@ -428,7 +428,7 @@
             <plugin>
                 <artifactId>jdeb</artifactId>
                 <groupId>org.vafer</groupId>
-                <version>14.21.02</version>
+                <version>${jdeb.version}</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
