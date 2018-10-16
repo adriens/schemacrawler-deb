@@ -38,7 +38,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-        <jdeb.version>1.6</jdeb.version>
+        <jdeb.version>1.7</jdeb.version>
         
         <derby.version>10.14.2.0</derby.version>
         
