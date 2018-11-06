@@ -49,9 +49,7 @@
         <mysql.version>8.0.13</mysql.version>
         <postgresql.version>42.2.5</postgresql.version>
         <sqlite.version>3.25.2</sqlite.version>
-        <xmlpull.version>1.1.3.1</xmlpull.version>
-        <xpp3_min.version>1.1.4c</xpp3_min.version>
-        <xstream.version>1.4.10</xstream.version>
+        
         <jt400.version>9.6</jt400.version>
         
         <!-- Addition lints -->
@@ -124,23 +122,6 @@
             <version>${h2.version}</version>
         </dependency>
 
-
-        <!-- Offline feature dependencies -->
-        <dependency>
-            <groupId>xmlpull</groupId>
-            <artifactId>xmlpull</artifactId>
-            <version>${xmlpull.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>xpp3</groupId>
-            <artifactId>xpp3_min</artifactId>
-            <version>${xpp3_min.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>${xstream.version}</version>
-        </dependency>
         
         <!-- DB2/400 driver-->
         <dependency>
@@ -339,31 +320,7 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>com.thoughtworks.xstream</groupId>
-                                    <artifactId>xstream</artifactId>
-                                    <version>${xstream.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xpp3</groupId>
-                                    <artifactId>xpp3_min</artifactId>
-                                    <version>${xpp3_min.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xmlpull</groupId>
-                                    <artifactId>xmlpull</artifactId>
-                                    <version>${xmlpull.version}</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/lib/</outputDirectory>
-                                </artifactItem>
-                                
+                                                                
                                 <!-- DB2 -->
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
@@ -373,8 +330,6 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/lib/</outputDirectory>
                                 </artifactItem>
-                                
-                                
                                 
                                 <!-- Oracle -->
                                 <artifactItem>
@@ -637,37 +592,6 @@
                                         <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
                                     </mapper>
                                 </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/xmlpull-${xmlpull.version}.jar</src>
-                                    <dst>xmlpull-${xmlpull.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/xpp3_min-${xpp3_min.version}.jar</src>
-                                    <dst>xpp3_min-${xpp3_min.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                <data>
-                                    <src>${project.build.directory}/lib/xstream-${xstream.version}.jar</src>
-                                    <dst>xstream-${xstream.version}.jar</dst>
-                                    <type>file</type>
-                                    <mapper>
-                                        <type>perm</type>
-                                        <filemode>555</filemode>
-                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
-                                    </mapper>
-                                </data>
-                                
                                 <!-- DB2 Resources -->
                                 <data>
                                     <src>${project.build.directory}/lib/schemacrawler-db2-${project.version}.jar</src>
