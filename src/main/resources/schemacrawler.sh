@@ -1,6 +1,3 @@
 #!/bin/sh
-if [ $# -eq 0 ]; then
-java -cp $(echo /opt/schemacrawler/lib/*.jar | tr ' ' ':') schemacrawler.Main $*
-else
-java -cp $(echo /opt/schemacrawler/lib/*.jar | tr ' ' ':') schemacrawler.Main $*
-fi
+SC_DIR=/opt/schemacrawler
+java -cp $(echo $SC_DIR/lib/*.jar | tr ' ' ':'):$SC_DIR/config schemacrawler.Main "$@"
