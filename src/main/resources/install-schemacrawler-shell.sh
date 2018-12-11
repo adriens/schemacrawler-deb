@@ -6,7 +6,7 @@ echo "#                                                         #"
 echo "###########################################################"
 
 # For now, hard code schemacrawler version
-export SC_VERSION=15.01.06
+export SC_VERSION=15.03.01
 
 cd ~ 
 mkdir ~/schemacrawler-shell-${SC_VERSION}
