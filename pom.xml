@@ -858,6 +858,26 @@
                                     <linkTarget>/opt/schemacrawler-${project.version}/schemacrawler.sh</linkTarget>  
                                     <symlink>true</symlink>
                                 </data>
+                                
+                                <!-- Schemacrawler shell installer -->
+                                <data>
+                                    <src>src/main/resources/HOW-TO.txt</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>src/main/resources/install-schemacrawler-shell.sh</src>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/</prefix>
+                                    </mapper>
+                                </data>
                             </dataSet>
                         </configuration>
                     </execution>
