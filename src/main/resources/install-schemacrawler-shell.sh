@@ -1,13 +1,16 @@
 echo "###########################################################"
 echo "#                                                         #"
 echo "# Install schemacrawler Shell from scratch on your        #"
-echo "# CURRENT] current directory                              #"
+echo "# home  directory                                         #"
 echo "#                                                         #"
 echo "###########################################################"
 
 # For now, hard code schemacrawler version
 export SC_VERSION=15.01.06
 
+cd ~ 
+mkdir ~/schemacrawler-shell-${SC_VERSION}
+cd ~/schemacrawler-shell-${SC_VERSION}
 
 echo "Getting schemawrawler-shell binaries ..."
 wget https://github.com/schemacrawler/SchemaCrawler/releases/download/v${SC_VERSION}/schemacrawler-${SC_VERSION}-distribution.zip
