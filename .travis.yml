@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 env:
-  - SCHEMACRAWLER_VERSION=12.06.03
+  - SCHEMACRAWLER_VERSION=15.03.04
 cache:
   directories:
   - .autoconf
