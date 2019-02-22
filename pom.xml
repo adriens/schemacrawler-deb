@@ -42,7 +42,7 @@
         
         <derby.version>10.14.2.0</derby.version>
         
-        <h2.version>1.4.197</h2.version>
+        <h2.version>1.4.198</h2.version>
         <hsqldb.version>2.4.1</hsqldb.version>
         <mssql.version>7.0.0.jre8</mssql.version>
         <mariadb.version>2.4.0</mariadb.version>
