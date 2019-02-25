@@ -38,6 +38,21 @@ Build all and (re)install
 `mvn clean package site -Ddependency.locations.enabled=false && sudo apt-get remove schemacrawler && sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb`
 
 
+# Debian customization : additional lints
+
+As requested see [#68](https://github.com/adriens/schemacrawler-deb/issues/68), you can decide to directly prepare
+your debian package with [additional lint](https://github.com/mbarre/schemacrawler-additional-lints) jar dropped
+in `SCHEMACRAWLE_HOME/lib` so you don't have to move it afterwards.
+
+To build such a debian package, just build with the following option :
+
+```
+mvn clean package -Dadditional-lints.target.dir=lib
+```
+
+
+
+
 Uninstall
 ------------------------------------------
 
