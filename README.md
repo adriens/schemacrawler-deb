@@ -47,8 +47,16 @@ in `SCHEMACRAWLE_HOME/lib` so you don't have to move it afterwards.
 To build such a debian package, just build with the following option :
 
 ```
-mvn clean package -Dadditional-lints.target.dir=lib
+mvn clean package -Dadditional-lints.target.dir=lib -Dwith-lint-flag=-with-additional-lints
 ```
+
+So if you want both (with and without additional lints) debians packages, just :
+
+```
+mvn clean package && mvn package -Dadditional-lints.target.dir=lib -Dwith-lint-flag=-with-additional-lints
+ls -la target/*.deb
+```
+
 
 
 

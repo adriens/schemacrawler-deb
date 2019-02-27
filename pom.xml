@@ -60,6 +60,8 @@
         
         <!-- Additional optional dir see Github (https://github.com/adriens/schemacrawler-deb/issues/68) issue #68 -->
         <additional-lints.target.dir>additional-lints</additional-lints.target.dir>
+        <!-- To build a dedicated deb with lints embedded -->
+        <with-lint-flag></with-lint-flag>
         
         
         <!-- Maven reporting plugin versions -->
@@ -395,6 +397,7 @@
                             <goal>jdeb</goal>
                         </goals>
                         <configuration>
+                            <deb>${project.build.directory}/${project.build.finalName}_all${with-lint-flag}.deb</deb>
                             <dataSet>
                                 <!-- Core schemacrawler libraries -->
                                 <data>
