@@ -20,7 +20,7 @@ deploy:
   
   file_glob: true
   file:
-  - "${$RELEASE_PKG_FILE_ALL}"
+  - "${RELEASE_PKG_FILE_ALL}"
   - "${RELEASE_PKG_FILE_WITH_LINTS}"
   skip_cleanup: true
   on:
