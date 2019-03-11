@@ -29,13 +29,13 @@ Build docs and debian installer
 Build all and Install
 ------------------------------------------
 
-`mvn clean package site -Ddependency.locations.enabled=false && sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb`
+`mvn clean package site -Ddependency.locations.enabled=false && sudo dpkg -i target/schemacrawler-deb-${SCHEMACRAWLER_VERSION}_all.deb`
 
 
 Build all and (re)install
 ------------------------------------------
 
-`mvn clean package site -Ddependency.locations.enabled=false && sudo apt-get remove schemacrawler && sudo dpkg -i target/schemacrawler-deb_${SCHEMACRAWLER_VERSION}_all.deb`
+`mvn clean package site -Ddependency.locations.enabled=false && sudo apt-get remove schemacrawler && sudo dpkg -i target/schemacrawler-deb-${SCHEMACRAWLER_VERSION}_all.deb`
 
 
 # Debian customization : additional lints
