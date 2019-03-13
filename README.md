@@ -66,6 +66,18 @@ Uninstall
 
 `sudo apt-get remove schemacrawler`
 
+# Vagrant BOX
+
+```
+vagrant up
+vagrant ssh
+cd /vagrant
+mvn clean package
+export SCHEMACRAWLER_VERSION=15.06.01
+sudo dpkg -i target/schemacrawler-deb-${SCHEMACRAWLER_VERSION}_all.deb
+schemacrawler -version
+```
+
 Contribute
 ------------------------------------------
 
