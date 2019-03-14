@@ -69,5 +69,7 @@ Vagrant.configure("2") do |config|
 		apt-get -y install openjdk-8-jdk
 		apt-get -y install maven
 		update-alternatives --config java
+		apt-get -y install postgresql postgresql-contrib
+
    SHELL
 end
