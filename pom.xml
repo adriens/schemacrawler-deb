@@ -40,6 +40,10 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <jdeb.version>1.7</jdeb.version>
         
+        <!-- 
+        DO NOT UPGRADE UNTIL
+        MAIN SCHEMACRAWLER DISTRIB SUPPORTS IT !!!
+        --> 
         <derby.version>10.13.1.1</derby.version>
         
         <h2.version>1.4.199</h2.version>
