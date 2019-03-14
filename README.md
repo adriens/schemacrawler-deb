@@ -1,6 +1,9 @@
 Schemacrawler Debian package builder
 ==========================================
 
+[![Beerpay](https://beerpay.io/adriens/schemacrawler-deb/badge.svg)](https://beerpay.io/adriens/schemacrawler-deb)
+[![Beerpay](https://beerpay.io/adriens/schemacrawler-deb/make-wish.svg)](https://beerpay.io/adriens/schemacrawler-deb)
+
 [![Join the chat at https://gitter.im/adriens/schemacrawler-deb](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adriens/schemacrawler-deb?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/adriens/schemacrawler-deb.svg?branch=master)](https://travis-ci.org/adriens/schemacrawler-deb) 
 [![Github Releases](https://img.shields.io/github/downloads/adriens/schemacrawler-deb/latest/total.svg?maxAge=2592000)](http://www.somsubhra.com/github-release-stats/?username=adriens&repository=schemacrawler-deb)[![Github All Releases](https://img.shields.io/github/downloads/adriens/schemacrawler-deb/total.svg?maxAge=2592000)](http://www.somsubhra.com/github-release-stats/?username=adriens&repository=schemacrawler-deb)
@@ -83,10 +86,3 @@ Contribute
 
 If you are familiar with bash auto-complete files, you are welcome to provide me one 
 to make schemacawler linux experience even better.
-
-
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/adriens/schemacrawler-deb/badge.svg?style=beer-square)](https://beerpay.io/adriens/schemacrawler-deb)  [![Beerpay](https://beerpay.io/adriens/schemacrawler-deb/make-wish.svg?style=flat-square)](https://beerpay.io/adriens/schemacrawler-deb?focus=wish)
