@@ -85,3 +85,8 @@ If you are familiar with bash auto-complete files, you are welcome to provide me
 to make schemacawler linux experience even better.
 
 
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/adriens/schemacrawler-deb/badge.svg?style=beer-square)](https://beerpay.io/adriens/schemacrawler-deb)  [![Beerpay](https://beerpay.io/adriens/schemacrawler-deb/make-wish.svg?style=flat-square)](https://beerpay.io/adriens/schemacrawler-deb?focus=wish)
