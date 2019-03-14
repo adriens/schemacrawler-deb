@@ -71,11 +71,11 @@
     </properties>
     
     <repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
     
     <dependencies>
         <!-- Schemacrawler dependencies -->
@@ -138,19 +138,19 @@
         
         <!-- Additional lints dependency -->
         <dependency>
-	    <groupId>com.github.mbarre</groupId>
-	    <artifactId>schemacrawler-additional-lints</artifactId>
-	    <version>${schemacrawler-additional-lints.version}</version>
-	</dependency>
+            <groupId>com.github.mbarre</groupId>
+            <artifactId>schemacrawler-additional-lints</artifactId>
+            <version>${schemacrawler-additional-lints.version}</version>
+        </dependency>
         
         
         <!-- Additional csv command plugin export,
         see https://github.com/adriens/schemacrawler-csv-plugin -->
         <dependency>
-	    <groupId>com.github.adriens</groupId>
-	    <artifactId>schemacrawler-plugin-dashboard</artifactId>
-	    <version>${schemacrawler-plugin-dashboard.version}</version>
-	</dependency>
+            <groupId>com.github.adriens</groupId>
+            <artifactId>schemacrawler-plugin-dashboard</artifactId>
+            <version>${schemacrawler-plugin-dashboard.version}</version>
+        </dependency>
 
     </dependencies>
     
@@ -176,6 +176,21 @@
                                     <overWrite>true</overWrite>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
                                 </artifactItem>
+                                <dependency>
+                                    <groupId>us.fatehi</groupId>
+                                    <artifactId>schemacrawler-commandline</artifactId>
+                                    <version>${project.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                                </dependency>
+                                <dependency>
+                                    <groupId>us.fatehi</groupId>
+                                    <artifactId>schemacrawler-scripting</artifactId>
+                                    <version>${project.version}</version>
+                                    <overWrite>true</overWrite>
+                                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                                </dependency>
+                                
                                 <artifactItem>
                                     <groupId>us.fatehi</groupId>
                                     <artifactId>schemacrawler-lint</artifactId>
@@ -420,7 +435,26 @@
                                         <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
                                     </mapper>
                                 </data>
-                                
+                                <data>
+                                    <src>${project.build.directory}/lib/schemacrawler-scripting-${project.version}.jar</src>
+                                    <dst>schemacrawler-scripting-${project.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
+                                    </mapper>
+                                </data>
+                                <data>
+                                    <src>${project.build.directory}/lib/schemacrawler-commandline-${project.version}.jar</src>
+                                    <dst>schemacrawler-commandline-${project.version}.jar</dst>
+                                    <type>file</type>
+                                    <mapper>
+                                        <type>perm</type>
+                                        <filemode>555</filemode>
+                                        <prefix>/opt/schemacrawler-${project.version}/lib/</prefix>
+                                    </mapper>
+                                </data>
                                 <!-- config properties -->
                                 <data>
                                     <src>src/main/resources/schemacrawler.colormap.properties</src>
