@@ -52,7 +52,7 @@
         <mariadb.version>2.4.0</mariadb.version>
         <mysql.version>8.0.15</mysql.version>
         <postgresql.version>42.2.5</postgresql.version>
-        <sqlite.version>3.25.2</sqlite.version>
+        <sqlite.version>3.27.2</sqlite.version>
         
         <jt400.version>9.7</jt400.version>
         
