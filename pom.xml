@@ -54,7 +54,7 @@
         <postgresql.version>42.2.5</postgresql.version>
         <sqlite.version>3.27.2.1</sqlite.version>
         
-        <jt400.version>9.7</jt400.version>
+        <jt400.version>9.8</jt400.version>
         
         <!-- Addition lints -->
         <schemacrawler-additional-lints.version>1.05.03</schemacrawler-additional-lints.version>
