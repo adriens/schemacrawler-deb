@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - oraclejdk8
+  - openjdk8
 install: mvn clean package && mvn package -Dadditional-lints.target.dir=lib -Dwith-lint-flag=-with-additional-lints
 env:
   - SCHEMACRAWLER_VERSION=15.06.01
