@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "18:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.microsoft.sqlserver:mssql-jdbc
+    versions:
+    - "> 7.0.0.jre8"
+  - dependency-name: us.fatehi:schemacrawler
+    versions:
+    - 16.11.7
+    - 16.12.1
+    - 16.12.2
+    - 16.12.3
+    - 16.14.1
+    - 16.14.2
+    - 16.14.3
+    - 16.14.4
+  - dependency-name: org.postgresql:postgresql
+    versions:
+    - 42.2.18
+    - 42.2.19
+  - dependency-name: mysql:mysql-connector-java
+    versions:
+    - 8.0.23
+  - dependency-name: net.sf.jt400:jt400
+    versions:
+    - "10.5"
+  - dependency-name: org.mariadb.jdbc:mariadb-java-client
+    versions:
+    - 2.7.1
+  - dependency-name: org.hsqldb:hsqldb
+    versions:
+    - 2.5.1
