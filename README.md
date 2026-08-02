@@ -12,7 +12,7 @@ Schemacrawler Debian package builder
 Set the version in session
 ------------------------------------------
 
-    export SCHEMACRAWLER_VERSION=15.06.01
+    export SCHEMACRAWLER_VERSION=16.15.2
 
 Download and install .deb
 ------------------------------------------
@@ -76,7 +76,7 @@ vagrant up
 vagrant ssh
 cd /vagrant
 mvn clean package
-export SCHEMACRAWLER_VERSION=15.06.01
+export SCHEMACRAWLER_VERSION=16.15.2
 sudo dpkg -i target/schemacrawler-deb-${SCHEMACRAWLER_VERSION}_all.deb
 schemacrawler -version
 ```
