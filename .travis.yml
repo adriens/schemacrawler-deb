@@ -3,7 +3,7 @@ jdk:
   - openjdk8
 install: mvn clean package && mvn package -Dadditional-lints.target.dir=lib -Dwith-lint-flag=-with-additional-lints
 env:
-  - SCHEMACRAWLER_VERSION=15.06.01
+  - SCHEMACRAWLER_VERSION=16.15.2
 cache:
   directories:
   - .autoconf
